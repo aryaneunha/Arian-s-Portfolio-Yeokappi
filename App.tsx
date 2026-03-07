@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { HashRouter, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Home } from './components/Home';
 import { ProjectPage } from './components/ProjectPage';
 
@@ -33,6 +34,7 @@ function App() {
   return (
     <HashRouter>
       <AppContent />
+      <SpeedInsights />
     </HashRouter>
   );
 }
